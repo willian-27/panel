@@ -114,7 +114,7 @@ echo ""
 wget -O /var/www/index.html https://raw.githubusercontent.com/willian-27/panel/index.html &> /dev/null
 mkdir /var/www/html
 cd /var/www/html
-wget https://uc133f483b4b2bf5fccfbe3b8fb3.dl.dropboxusercontent.com/cd/0/get/AnP_LJUYW-U12glyaRIXU6wSN0a74So25MabOueDn2_kVLL76dVemwBb3h-C-6CsmFr6teRTdzCOCk0BZjhLv0N9UUIvmfuu2KIHzgbXJ1_-rjKeOm8CHJV9U4rw1gPA9e4/file?dl=1# > /dev/null 2>&1
+wget https://uc67e946d84a13135b4c7e2136df.dl.dropboxusercontent.com/cd/0/get/AnM4otc1yyOMKlEyDtFEvgcpgWkfIezgzcqGnbYPAV0eEdmnpYkG2Sc4NyserjYX8FkaE61V0QVM6vcvV3emZ2Fiqkc0QllRoT3LS4PyXUCtINhr2_so2JDGef3EK0wUBR4/file# > /dev/null 2>&1
 sleep 1
 unzip painel10.zip > /dev/null 2>&1
 rm -rf painel10.zip index.html > /dev/null 2>&1
@@ -125,7 +125,7 @@ sed -i "s;suasenha;$senha;g" /var/www/html/pages/system/pass.php > /dev/null 2>&
 fi
 sleep 1
 cd
-wget https://www.dropbox.com/s/4kqvchszquqpwqe/plus.sql > /dev/null 2>&1
+wget https://ucee765ee2d5c6b4ebc611fd0e2c.dl.dropboxusercontent.com/cd/0/get/AnM_qPsPC2On1dXeM1FH1bD74jq6SwLt3mGt1ztaVvT7YF0FhGAKZO9a6iou9oS_FOy9n4wGwTg_Lstevkmj-MUCXv67SKEcgXN412EuyVRxtogsaW-Wasa9FBdK3248BwE/file?dl=1# > /dev/null 2>&1
 sleep 1
 if [[ -e "$HOME/plus.sql" ]]; then
     mysql -h localhost -u root -p$senha --default_character_set utf8 plus < plus.sql
@@ -149,19 +149,14 @@ chmod 777 /var/www/html/admin/pages/faturas/comprovantes
 service apache2 restart
 sleep 1
 clear
-echo -e "\033[1;32mPANEL INSTALADO CON EXITO!"
+echo -e "\033[1;32mPAINEL INSTALADO COM SUCESSO!"
 echo ""
-echo -e "\033[1;36mLINK AREA DE ADMIN:\033[1;37m $IP:81/html/admin\033[0m"
-echo -e "\033[1;36mLINK AREA DE REVENDEDOR: \033[1;37m $IP:81/html\033[0m"
+echo -e "\033[1;36mLINK AREA DE ADMIN:\033[1;37m $IP:81/admin\033[0m"
+echo -e "\033[1;36mLINK AREA DE REVENDEDOR: \033[1;37m $IP:81/\033[0m"
 echo -e "\033[1;36mUSUARIO\033[1;37m admin\033[0m"
-echo -e "\033[1;36mCONTRASENA\033[1;37m admin\033[0m"
+echo -e "\033[1;36mSENHA\033[1;37m admin\033[0m"
 echo ""
-
-echo -e "\033[1;36mINGRESE ESTE ENLACE EN LA VPS QUE SERA SERVIDOR\033[0m"
-echo -e "\033[1;37mwget http://ssh-plus.tk/revenda/confpainel/inst > /dev/null 2>&1; bash inst\033[0m"
-
-
-echo -e "\033[1;33mCambie la contrasena una vez entrando al panel\033[0m"
+echo -e "\033[1;33mTroque a senha do painel quando acessa-lo\033[0m"
 cat /dev/null > ~/.bash_history && history -c
 }
 
