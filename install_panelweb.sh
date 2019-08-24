@@ -111,10 +111,10 @@ echo -e "\033[1;36mFINALIZANDO INSTALAÇÃO\033[0m"
 echo ""
 echo -e "\033[1;33mAGUARDE..."
 echo ""
-wget -O /var/www/index.html https://raw.githubusercontent.com/AAAAAEXQOSyIpN2JZ0ehUQ/ADM-ULTIMATE-NEW-FREE/master/Install/Panel_Web/index.html &> /dev/null
+wget -O /var/www/index.html https://raw.githubusercontent.com/willian-27/panel/index.html &> /dev/null
 mkdir /var/www/html
 cd /var/www/html
-wget https://www.dropbox.com/s/hap27l4buda652s/painel10.zip > /dev/null 2>&1
+wget https://uc133f483b4b2bf5fccfbe3b8fb3.dl.dropboxusercontent.com/cd/0/get/AnP_LJUYW-U12glyaRIXU6wSN0a74So25MabOueDn2_kVLL76dVemwBb3h-C-6CsmFr6teRTdzCOCk0BZjhLv0N9UUIvmfuu2KIHzgbXJ1_-rjKeOm8CHJV9U4rw1gPA9e4/file?dl=1# > /dev/null 2>&1
 sleep 1
 unzip painel10.zip > /dev/null 2>&1
 rm -rf painel10.zip index.html > /dev/null 2>&1
